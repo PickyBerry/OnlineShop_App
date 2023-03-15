@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="com.pickyberry.authorization.presentation.SignInScreen">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Welcome back"
+        android:textColor="@color/black_text"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="First name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/field_text"
+        android:textSize="11sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_input"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/field_text"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/visibility"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_visibility_off_24" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_background"
+        android:text="Sign in"
+        android:textAllCaps="false"
+
+        />
+
+
+</LinearLayout>

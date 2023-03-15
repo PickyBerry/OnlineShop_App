@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_alignParentBottom="true">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/outline_home" />
+    <item
+        android:id="@+id/fav"
+        android:icon="@drawable/baseline_favorite_border" />
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/outline_shopping_cart_24" />
+    <item
+        android:id="@+id/comments"
+        android:icon="@drawable/outline_mode_comment_24" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/outline_person_outline_24" />
+</menu>

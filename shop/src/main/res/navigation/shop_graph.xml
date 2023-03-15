@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_graph"
+    app:startDestination="@id/firstPageScreen">
+    <fragment
+        android:id="@+id/firstPageScreen"
+        android:name="com.pickyberry.shop.presentation.firstpage.FirstPageScreen"
+        android:label="fragment_first_page_screen"
+        tools:layout="@layout/fragment_first_page_screen">
+    <deepLink app:uri="android-app://pickyberry.testapp/firstpage_fragment" />
+        <action
+            android:id="@+id/action_firstPageScreen_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.pickyberry.shop.presentation.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <deepLink app:uri="android-app://pickyberry.testapp/profile_fragment" />
+    </fragment>
+</navigation>

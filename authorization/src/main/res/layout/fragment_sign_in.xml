@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="com.pickyberry.authorization.presentation.SignInScreen">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Sign in"
+        android:textColor="@color/black_text"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="First name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/field_text"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_input"
+        android:hint="Last name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/field_text"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_input"
+        android:hint="Email"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/field_text"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_background"
+        android:text="Sign in"
+        android:textAllCaps="false"
+
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="Already have an account?"
+            android:textColor="@color/extra_text"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Log in"
+            android:textAlignment="center"
+            android:textColor="@color/link_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/google"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="left|center">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/google" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/apple"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="left|center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/apple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Apple"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

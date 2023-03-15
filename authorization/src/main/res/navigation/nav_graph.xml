@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.pickyberry.authorization.presentation.SignInScreen"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <deepLink app:uri="android-app://pickyberry.testapp/signin_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="layout.LogInScreen"
+        android:label="LogInFragment">
+        <deepLink app:uri="android-app://pickyberry.testapp/login_fragment" />
+    </fragment>
+
+</navigation>
